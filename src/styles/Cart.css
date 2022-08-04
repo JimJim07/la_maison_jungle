@@ -1,0 +1,31 @@
+.lmj-cart {
+	color: rgb(255, 255, 255);
+	background-color: #258654;
+	padding: 25px;
+	display: flex;
+	flex-direction: column;
+	min-width: 240px;
+}
+
+.lmj-cart-toggle-button {
+	background: none;
+	border: none;
+	letter-spacing: 1px;
+	font-weight: 600;
+	cursor: pointer;
+	align-self: flex-end;
+	padding: 0;
+	color: white;
+}
+
+.lmj-cart-closed {
+	padding: 25px;
+}
+
+.lmj-cart-closed > button {
+	color: black;
+}
+
+.lmj-cart-empty {
+	cursor: pointer;
+}
