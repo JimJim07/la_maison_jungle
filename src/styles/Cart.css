@@ -1,39 +1,49 @@
-.lmj-cart {
-	color: var(--white);
+.cart {
+	color: #fff;
 	background-color: var(--primary-color);
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	padding-top: 8rem;
+	z-index: -1;
+	box-shadow: 0 3px 3px rgba(0, 0, 0, 0.3);
+	transition: .4s;
 }
 
-.container-cart {
+.cart .container {
 	width: 90%;
-	max-width: 1200px;
+	max-width: 1000px;
 	margin: auto;
 	padding: 2rem 0;
 	display: flex;
 	flex-direction: column;
 }
 
-.lmj-cart-toggle-button {
-	background: none;
+.toggle-btn {
+	background: transparent;
 	border: none;
+	font-size: 1.6rem;
 	letter-spacing: 1px;
 	font-weight: 600;
 	cursor: pointer;
-	align-self: flex-end;
 	padding: 0;
-	color: var(--white);
+	margin-left: auto;
 }
 
-.lmj-cart-closed {
-	width: 90%;
-	max-width: 1200px;
-	margin: auto;
+.cart .toggle-btn {
+	color: #fff;
 }
 
-.lmj-cart-closed>button {
-	color: var(--font-color);
-	padding: 2rem 0;
+.closed .toggle-btn {
+	color: var(--font-color-1);
 }
 
-.lmj-cart-empty {
+.delete-btn {
+	background-color: #fff;
+	border: 0;
+	font-size: 1.6rem;
+	padding: .8rem;
+	border-radius: var(--rad);
 	cursor: pointer;
 }

@@ -1,14 +1,16 @@
 :root {
   --primary-color: #258654;
-  --font-color: #333;
+  --font-color-1: #333;
+  --font-color-2: #fff;
   --bg-color: #fff;
-  --white: #fff;
+  --rad: 1rem;
 }
 
 body.dark {
   --font-color: #fff;
   --bg-color: #333;
-  --white: #333;
+  --font-color-1: #fff;
+  --font-color-2: #333;
 }
 
 * {

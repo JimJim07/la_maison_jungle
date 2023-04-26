@@ -1,12 +1,11 @@
 import React, { useState, useEffect } from 'react'
-import Banner from './components/Banner'
-import logo from './assets/logo.png'
+import Header from './components/Header'
 import Cart from './components/Cart'
 import ShoppingList from './components/ShoppingList'
 import Footer from './components/Footer'
-import './styles/Layout.css'
 
-function App() {
+export default function App() {
+
 	const savedCart = localStorage.getItem('cart')
 	const [cart, updateCart] = useState(savedCart ? JSON.parse(savedCart) : [])
 	useEffect(() => {
@@ -14,19 +13,13 @@ function App() {
 	}, [cart])
 	return (
 		<React.Fragment>
-			<Banner>
-				<div className="lmj-container">
-					<img src={logo} alt='La maison jungle' className='lmj-logo' />
-					<h1 className='lmj-title'>La maison jungle</h1>
-				</div>
-			</Banner>
-			<main className='lmj-layout-inner'>
+			<Header>
 				<Cart cart={cart} updateCart={updateCart} />
-				<ShoppingList cart={cart} updateCart={updateCart} />
-			</main>
+			</Header>
+			
+			<ShoppingList cart={cart} updateCart={updateCart} />
+			
 			<Footer />
 		</React.Fragment>
 	)
 }
-
-export default App

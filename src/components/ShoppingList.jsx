@@ -12,7 +12,7 @@ function ShoppingList({ cart, updateCart }) {
 		[]
 	)
 
-	function addToCart(name, price) {
+	function addToCart(name, price, e) {
 		// alert(`${name} a été ajouter au panier`)
 		const currentPlantSaved = cart.find((plant) => plant.name === name)
 		if (currentPlantSaved) {
@@ -26,6 +26,17 @@ function ShoppingList({ cart, updateCart }) {
 		} else {
 			updateCart([...cart, { name, price, amount: 1 }])
 		}
+		showAddToCart(name, e)
+	}
+
+	function showAddToCart(name, e) {
+		const order = e.currentTarget.parentElement.querySelector('.order')
+		order.textContent = `${name} ajouté au panier`
+		order.classList.add('show')
+		setTimeout(()=>{
+		order.classList.remove('show')
+		order.textContent = ``
+		},2000)
 	}
 
 	return (
@@ -37,7 +48,7 @@ function ShoppingList({ cart, updateCart }) {
 			/>
 
 			<ul className='lmj-plant-list'>
-				{plantList.map(({ id, cover, name, water, light, price, category }) =>
+				{plantList.map(({ id, cover, name, water, light, price, category, cart }) =>
 					!activeCategory || activeCategory === category ? (
 						<li className='card' key={id}>
 							<PlantItem
@@ -47,7 +58,7 @@ function ShoppingList({ cart, updateCart }) {
 								light={light}
 								price={price}
 							/>
-							<button onClick={() => addToCart(name, price)} className='lmj-plant-list-add'>Ajouter</button>
+							<button onClick={(e) => addToCart(name, price, e)} className='lmj-plant-list-add'>Ajouter</button>
 						</li>
 					) : null
 				)}

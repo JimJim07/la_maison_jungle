@@ -1,8 +1,8 @@
 .lmj-categories {
 	display: flex;
 	width: 90%;
-	max-width: 1200px;
-	margin: 2rem auto;
+	max-width: 1000px;
+	margin: 12rem auto 2rem;
 }
 
 .lmj-select {
