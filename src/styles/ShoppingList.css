@@ -10,6 +10,17 @@
 	gap: 3rem;
 }
 
+.card {
+	background-color: rgba(144, 238, 144, 0.641);
+	border-radius: 2rem;
+	padding: 1rem;
+}
+
 .lmj-plant-list-add {
+	border: 1px solid #88888879;
+	font-size: 1.6rem;
+	background-color: var(--white);
+	border-radius: 1rem;
+	padding: 0.5rem 1rem;
 	cursor: pointer;
 }

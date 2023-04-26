@@ -1,7 +1,7 @@
-import { useState } 	from 'react'
-import { plantList } 	from '../datas/plantList'
-import PlantItem 		from './PlantItem'
-import Categories 		from './Categories'
+import { useState } from 'react'
+import { plantList } from '../datas/plantList'
+import PlantItem from './PlantItem'
+import Categories from './Categories'
 import '../styles/ShoppingList.css'
 
 function ShoppingList({ cart, updateCart }) {
@@ -27,7 +27,7 @@ function ShoppingList({ cart, updateCart }) {
 			updateCart([...cart, { name, price, amount: 1 }])
 		}
 	}
-	
+
 	return (
 		<div className='lmj-shopping-list'>
 			<Categories
@@ -39,7 +39,7 @@ function ShoppingList({ cart, updateCart }) {
 			<ul className='lmj-plant-list'>
 				{plantList.map(({ id, cover, name, water, light, price, category }) =>
 					!activeCategory || activeCategory === category ? (
-						<li key={id}>
+						<li className='card' key={id}>
 							<PlantItem
 								cover={cover}
 								name={name}
@@ -47,7 +47,7 @@ function ShoppingList({ cart, updateCart }) {
 								light={light}
 								price={price}
 							/>
-							<button onClick={() => addToCart(name, price)} className={"lmj-plant-list-add"}>Ajouter</button>
+							<button onClick={() => addToCart(name, price)} className='lmj-plant-list-add'>Ajouter</button>
 						</li>
 					) : null
 				)}

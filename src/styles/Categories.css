@@ -1,7 +1,10 @@
 .lmj-categories {
 	display: flex;
-	justify-content: space-between;
 	width: 90%;
 	max-width: 1200px;
 	margin: 2rem auto;
+}
+
+.lmj-select {
+	margin-right: 2rem;
 }
