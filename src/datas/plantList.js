@@ -1,12 +1,12 @@
-import monstera 	from '../assets/pictures_500/monstera.jpg'
-import lyrata 		from '../assets/pictures_500/lyrata.jpg'
-import pothos 		from '../assets/pictures_500/pothos.jpg'
-import calathea 	from '../assets/pictures_500/calathea.jpg'
-import olivier 		from '../assets/pictures_500/olivier.jpg'
-import cactus 		from '../assets/pictures_500/cactus.jpg'
-import succulent 	from '../assets/pictures_500/succulent.jpg'
-import basil 		from '../assets/pictures_500/basil.jpg'
-import mint 		from '../assets/pictures_500/mint.jpg'
+import monstera from '../assets/pictures_500/monstera.jpg'
+import lyrata from '../assets/pictures_500/lyrata.jpg'
+import pothos from '../assets/pictures_500/pothos.jpg'
+import calathea from '../assets/pictures_500/calathea.jpg'
+import olivier from '../assets/pictures_500/olivier.jpg'
+import cactus from '../assets/pictures_500/cactus.jpg'
+import succulent from '../assets/pictures_500/succulent.jpg'
+import basil from '../assets/pictures_500/basil.jpg'
+import mint from '../assets/pictures_500/mint.jpg'
 
 export const plantList = [
 	{

@@ -1,9 +1,13 @@
 .lmj-plant-list {
+	width: 90%;
+	max-width: 1200px;
+	margin: auto;
 	list-style-type: none;
-	padding: 30px;
+	padding: 0;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
+	gap: 3rem;
 }
 
 .lmj-plant-list-add {

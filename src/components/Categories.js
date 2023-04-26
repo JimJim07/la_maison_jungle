@@ -6,7 +6,6 @@ function Categories({ categories, setActiveCategory, activeCategory }) {
 			<select
 				value={activeCategory}
 				onChange={(e) => setActiveCategory(e.target.value)}
-				className='lmj-categories-select'
 			>
 				<option value=''>Toutes les plantes</option>
 				{categories.map((cat) => (
