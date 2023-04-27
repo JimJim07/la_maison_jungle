@@ -9,7 +9,7 @@
 	max-width: 30rem;
 }
 
-.card .img {
+.card__img {
 	height: 25rem;
 	width: 100%;
 	border-radius: var(--rad);
@@ -17,7 +17,7 @@
 	margin-bottom: 1rem;
 }
 
-.card .price {
+.card__price {
 	position: absolute;
 	border-radius: var(--rad) var(--rad) var(--rad) 0;
 	background-color: var(--primary-color);
@@ -29,7 +29,7 @@
 	animation: price 2s infinite;
 }
 
-.card .title {
+.card__title {
 	font-size: 2.5rem;
 }
 
@@ -47,8 +47,7 @@
 	}
 }
 
-
-.card .order.show {
+.card__order.show {
 	top: 40%;
 	left: 50%;
 	font-size: 1.8rem;

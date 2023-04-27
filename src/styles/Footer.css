@@ -1,23 +1,27 @@
-.lmj-footer {
+.footer {
 	margin-top: 2rem;
-	padding: 32px;
+	padding: 2rem;
 	border-top: solid 3px black;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	font-weight: 500;
 }
 
-.lmj-footer-elem {
-	margin-bottom: 10px;
+.footer__input,
+.footer__btn {
+	min-width: 25rem;
+	padding: 1rem;
+	margin: .5rem;
+	font-size: 1.6rem;
+	border-radius: var(--rad);
+	border: 1px solid black;
 }
 
-.lmj-footer-input {
-	padding: 5px;
-	margin: 5px;
+.footer__btn {
+	cursor: pointer;
+	transition: .3s;
 }
 
-.lmj-footer-button {
-	padding: 5px;
-	margin: 5px;
+.footer__btn:hover {
+	background-color: lightgreen;
 }

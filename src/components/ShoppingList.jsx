@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import { plantList } from '../datas/plantList'
-import PlantItem from './PlantItem'
+import Card from './Card'
 import Categories from './Categories'
 import '../styles/ShoppingList.css'
 
@@ -30,7 +30,7 @@ function ShoppingList({ cart, updateCart }) {
 	}
 
 	function showAddToCart(name, e) {
-		const order = e.currentTarget.parentElement.querySelector('.order')
+		const order = e.currentTarget.parentElement.querySelector('.card__order')
 		order.textContent = `${name} ajouté au panier`
 		order.classList.add('show')
 		setTimeout(()=>{
@@ -51,14 +51,14 @@ function ShoppingList({ cart, updateCart }) {
 				{plantList.map(({ id, cover, name, water, light, price, category, cart }) =>
 					!activeCategory || activeCategory === category ? (
 						<li className='card' key={id}>
-							<PlantItem
+							<Card
 								cover={cover}
 								name={name}
 								water={water}
 								light={light}
 								price={price}
 							/>
-							<button onClick={(e) => addToCart(name, price, e)} className='lmj-plant-list-add'>Ajouter</button>
+							<button onClick={(e) => addToCart(name, price, e)} className='btn-add'>Ajouter</button>
 						</li>
 					) : null
 				)}

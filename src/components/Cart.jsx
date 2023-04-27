@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react'
 import '../styles/Cart.css'
 
 export default function Cart({ cart, updateCart }) {
-	const [isOpen, setIsOpen] = useState(true)
+	const [isOpen, setIsOpen] = useState(false)
 	const total = cart.reduce((acc, plant) => acc + plant.amount * plant.price,0)
 	useEffect(() => {
 		document.title = `LMJ: ${total}€ d'achats`

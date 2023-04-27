@@ -1,10 +1,25 @@
-.lmj-categories {
+.categories {
 	display: flex;
 	width: 90%;
 	max-width: 1000px;
 	margin: 12rem auto 2rem;
 }
 
-.lmj-select {
+.categories__select {
+	font-size: 1.6rem;
+	cursor: pointer;
 	margin-right: 2rem;
+	border-radius: var(--rad);
+	color: var(--font-color-1);
+	background-color: var(--font-color-2);
+}
+
+.categories__btn {
+	cursor: pointer;
+	padding: 1rem;
+	border-radius: var(--rad);
+	border: none;
+	font-size: 1.8rem;
+	background-color: var(--primary-color);
+	color: #fff;
 }

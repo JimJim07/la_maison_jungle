@@ -15,18 +15,18 @@ function Footer() {
 	}
 
 	return (
-		<footer className='lmj-footer'>
-			<div className='lmj-footer-elem'>
+		<footer className='footer'>
+			<p>
 				Pour les passionné·e·s de plantes 🌿🌱🌵
-			</div>
-			<div className='lmj-footer-elem'>Laissez-nous votre mail :</div>
+			</p>
+			<p>Laissez-nous votre mail :</p>
 			<input
-				className='lmj-footer-input'
+				className='footer__input'
 				placeholder='Entrez votre mail'
 				onChange={handleInput}
 				value={inputValue}
 			/>
-            <button onClick={onClick} className="lmj-footer-button">Valider 🌱</button>
+            <button onClick={onClick} className="footer__btn">Valider 🌱</button>
 		</footer>
 	)
 }
