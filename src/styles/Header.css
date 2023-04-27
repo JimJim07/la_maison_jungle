@@ -18,12 +18,12 @@
 	align-items: center;
 }
 
-.header .wrapper {
+.header__wrapper {
 	display: flex;
 	align-items: center;
 }
 
-.header h1 {
+.header__heading {
 	margin: 0;
 	padding: 0 2rem;
 	font-size: clamp(2.2rem, 6vw, 3.4rem);

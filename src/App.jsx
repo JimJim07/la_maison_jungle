@@ -16,9 +16,7 @@ export default function App() {
 			<Header>
 				<Cart cart={cart} updateCart={updateCart} />
 			</Header>
-			
 			<ShoppingList cart={cart} updateCart={updateCart} />
-			
 			<Footer />
 		</React.Fragment>
 	)
